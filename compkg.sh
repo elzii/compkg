@@ -67,6 +67,8 @@ compkg_jshon () {
 	while [ $x -le $DISPLAYCOUNT ]
 	do
 		#jshon -e results -e $x -e name -u -i n -e description -u < "$COMPKGTMPFILE"
+	  	echo -e "\033[1;31m" | tr "\\n" " "
+	  	export pkg$x=`jshon -e results -e $x -e name -u < "$COMPKGTMPFILE"`; echo pkg$x | tr "\\n" " "
 	  	echo -e "\033[36m" | tr "\\n" " "
 	  	jshon -e results -e $x -e name -u < "$COMPKGTMPFILE" | tr "\\n" " "
 	  	echo -e "\033[37m" | tr "\\n" " "
