@@ -19,7 +19,7 @@ compkg.sh searches packagist.org for packages to use with composer.phar
 ```bash
 cd /path/to/compkg-directory
 chmod +x compkg.sh
-compkg.sh
+./compkg.sh
 ```
 
 ## Notes
